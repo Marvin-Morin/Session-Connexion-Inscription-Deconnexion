@@ -1,0 +1,10 @@
+###
+http://localhost:3000/users/inscription
+Content-Type: application/json
+
+{
+  "nom": "Test",
+  "prenom": "Marvin",
+  "email": "admin@example.com", 
+  "password": "admin"
+}

@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif; /* Définit la police de caractères pour le corps du document */
+    background-color: #000000; /* Définit la couleur de fond du corps du document en noir */
+    margin: 0; /* Supprime les marges par défaut du corps du document */
+    padding: 0; /* Supprime le remplissage par défaut du corps du document */
+    display: flex; /* Utilise le modèle de boîte flexible */
+    flex-direction: column; /* Dispose les enfants en colonne plutôt qu'en ligne par défaut */
+    align-items: center; /* Centre les enfants horizontalement dans le conteneur flex */
+    justify-content: center; /* Centre les enfants verticalement dans le conteneur flex */
+    height: 100vh; /* Occupe 100% de la hauteur de la fenêtre visible */
+    position: relative; /* Position relative pour permettre le positionnement absolu des éléments enfants */
+}
+
+nav {
+    position: absolute; /* Position absolue par rapport au premier parent positionné */
+    top: 0; /* Aligne le haut du nav avec le haut de son conteneur positionné */
+    height: auto; /* Ajuste automatiquement la hauteur du nav en fonction de son contenu */
+    width: 100vw; /* Occupe 100% de la largeur de la fenêtre visible */
+    background-color: rgb(255, 255, 255); /* Couleur de fond blanche pour le nav */
+    padding: 20px; /* Ajoute un remplissage de 20 pixels à l'intérieur du nav */
+    display: flex; /* Utilise le modèle de boîte flexible */
+    align-items: center; /* Centre les enfants horizontalement dans le nav */
+    justify-content: space-around; /* Répartit l'espace entre les enfants du nav */
+    color: rgb(0, 0, 0); /* Couleur du texte noire pour le nav */
+}
+
+nav a {
+    color: rgb(0, 0, 0); /* Couleur du texte noire pour les liens dans le nav */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    border: 3px solid rgb(0, 0, 0); /* Bordure solide noire d'un pixel pour les liens dans le nav */
+    margin: 0px 20px; /* Marge de 0 pixels en haut/bas et 20 pixels à gauche/droite pour les liens dans le nav */
+    padding: 5px; /* Remplissage de 5 pixels à l'intérieur des liens dans le nav */
+    border-radius: 5px; /* Ajoute un rayon de bordure de 5 pixels aux liens dans le nav */
+    transition: .1s all ease-in; /* Ajoute une transition de 0.1 seconde à toutes les propriétés avec un effet d'entrée */
+}
+
+nav a:hover {
+    border: 3px solid green; /* Lorsque le lien est survolé, la bordure devient solide verte de 3 pixels */
+    transition: .1s all ease-out; /* Ajoute une transition de 0.1 seconde à toutes les propriétés avec un effet de sortie */
+}
+
+form {
+    background-color: #fff; /* Couleur de fond blanche pour le formulaire */
+    border-radius: 8px; /* Ajoute un rayon de bordure de 8 pixels au formulaire */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre de boîte au formulaire */
+    padding: 20px; /* Ajoute un remplissage de 20 pixels à l'intérieur du formulaire */
+    width: 300px; /* Largeur fixe du formulaire à 300 pixels */
+}
+
+h1 {
+    text-align: center; /* Centre le texte horizontalement dans le h1 */
+    color: #ffffff; /* Couleur du texte blanc pour le h1 */
+}
+
+label {
+    display: block; /* Affiche le label comme un élément de bloc, occupant toute la largeur disponible */
+    margin: 10px 0 5px; /* Marge de 10 pixels en haut, 0 pixels à gauche/droite, 5 pixels en bas pour le label */
+    color: #555; /* Couleur du texte grise pour le label */
+}
+
+input {
+    width: 100%; /* Occupe 100% de la largeur disponible pour les champs de saisie */
+    padding: 10px; /* Ajoute un remplissage de 10 pixels à l'intérieur des champs de saisie */
+    margin-bottom: 10px; /* Marge de 10 pixels en bas pour les champs de saisie */
+    box-sizing: border-box; /* Inclut le remplissage et la bordure dans la largeur et la hauteur du champ de saisie */
+    border: 1px solid #ccc; /* Bordure solide grise d'un pixel pour les champs de saisie */
+    border-radius: 4px; /* Ajoute un rayon de bordure de 4 pixels aux champs de saisie */
+    font-size: 16px; /* Taille de police de 16 pixels pour les champs de saisie */
+}
+
+button {
+    background-color: green; /* Couleur de fond verte pour le bouton */
+    color: #fff; /* Couleur du texte blanc pour le bouton */
+    padding: 10px 15px; /* Ajoute un remplissage de 10 pixels en haut/bas et 15 pixels à gauche/droite pour le bouton */
+    border: none; /* Supprime la bordure du bouton */
+    border-radius: 4px; /* Ajoute un rayon de bordure de 4 pixels au bouton */
+    cursor: pointer; /* Définit le curseur comme pointeur pour indiquer qu'il est cliquable */
+    font-size: 16px; /* Taille de police de 16 pixels pour le bouton */
+    transition: .3s all ease-in; /* Ajoute une transition de 0.3 seconde à toutes les propriétés avec un effet d'entrée */
+}
+
+button:hover {
+    transform: scale(1.1); /* Lorsque le bouton est survolé, il est agrandi à 110% de sa taille d'origine */
+    transition: .3s all ease-out; /* Ajoute une transition de 0.3 seconde à toutes les propriétés avec un effet de sortie */
+}

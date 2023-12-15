@@ -1,0 +1,74 @@
+/* Réinitialisation des marges, du padding et de la décoration du texte pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Styles pour le corps du document */
+body {
+    background-color: rgb(136, 171, 252); /* Couleur de fond pour le corps du document */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Police de caractères */
+    min-height: 100vh; /* Hauteur minimale de la vue à 100% de la fenêtre */
+    max-width: 100vw;
+    overflow-x: hidden;
+    display: flex; /* Utilise le modèle de boîte flexible */
+    flex-direction: column; /* Dispose les enfants en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+}
+
+/* Styles pour la barre de navigation */
+nav {
+    height: auto; /* Ajuste automatiquement la hauteur en fonction du contenu */
+    width: 100vw; /* Largeur à 100% de la fenêtre */
+    background-color: black; /* Couleur de fond noire pour la barre de navigation */
+    padding: 20px; /* Remplissage de 20 pixels */
+    display: flex; /* Utilise le modèle de boîte flexible */
+    align-items: center; /* Centre les enfants horizontalement */
+    justify-content: space-evenly; /* Répartit l'espace entre les enfants */
+    color: white; /* Couleur du texte blanc pour la barre de navigation */
+    position: relative;
+}
+
+/* Styles pour les liens dans la barre de navigation */
+nav a {
+    color: white; /* Couleur du texte blanc */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    border: 3px solid white; /* Bordure solide blanche d'un pixel */
+    margin: 0px 20px; /* Marge de 0 pixels en haut/bas et 20 pixels à gauche/droite */
+    padding: 5px; /* Remplissage de 5 pixels */
+    border-radius: 5px; /* Rayon de bordure de 5 pixels */
+    transition: .1s all ease-in; /* Transition de 0.1 seconde avec effet d'entrée */
+}
+
+/* Styles pour les liens dans la barre de navigation au survol */
+nav a:hover {
+    border: 3px solid green; /* Bordure solide verte de 3 pixels au survol */
+    transition: .1s all ease-out; /* Transition de 0.1 seconde avec effet de sortie */
+}
+
+/* Styles pour la section avec l'ID 'presentationPortfolio' */
+#presentationPortfolio {
+    display: flex; /* Utilise le modèle de boîte flexible */
+    flex-direction: column; /* Dispose les enfants en colonne */
+    justify-content: center; /* Centre les enfants verticalement */
+    align-items: center; /* Centre les enfants horizontalement */
+    margin: auto; /* Centre la section horizontalement en utilisant une marge automatique */
+}
+
+/* Styles pour l'élément avec l'ID 'imgPortfolio' */
+#imgPortfolio {
+    width: 50vw; /* Largeur à 50% de la fenêtre */
+    display: block; /* Affiche l'élément en tant que bloc */
+    margin: 50px auto; /* Marge de 50 pixels en haut/bas et centré horizontalement */
+    border: 2px solid white; /* Bordure solide blanche de 2 pixels */
+    border-radius: 5px; /* Rayon de bordure de 5 pixels */
+    transition: .3s all ease-out; /* Transition de 0.3 seconde avec effet de sortie */
+}
+
+/* Styles pour l'élément avec l'ID 'imgPortfolio' au survol */
+#imgPortfolio:hover {
+    border: 2px solid green; /* Bordure solide verte de 2 pixels au survol */
+    transition: .3s all ease-out; /* Transition de 0.3 seconde avec effet de sortie */
+    transform: scale(1.1); /* Agrandissement à 110% de la taille d'origine au survol */
+}

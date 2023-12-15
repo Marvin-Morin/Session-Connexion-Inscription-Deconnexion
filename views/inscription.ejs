@@ -1,0 +1,85 @@
+<!-- inscription.ejs -->
+
+
+<!--
+
+    Ce fichier définit la structure HTML de la page d'inscription, 
+    inclut des styles CSS spécifiques, et utilise des balises EJS pour afficher une alerte 
+    en cas d'erreur spécifique lors de la tentative d'inscription. 
+    Il propose également un formulaire pour la saisie des informations d'inscription.
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="css/inscription.css">
+    <!-- Inclusion du fichier de style CSS pour la page d'inscription -->
+</head>
+
+<body>
+
+
+
+    <nav>
+        <div id="lien">
+            <a href="/connexion">Connexion</a>
+            <!-- Lien vers la page de connexion -->
+        </div>
+    </nav>
+
+
+
+    <% if (locals.erreur === 'email_existe_deja') { %>
+        <!-- Affichage d'une alerte si l'erreur est "email_existe_deja" -->
+        <script>alert('L\'adresse email existe déjà');</script>
+    <% } %>
+
+
+
+    <h1>Inscription</h1>
+    <!-- Titre de la page -->
+
+
+
+    <form action="/users/inscription" method="post">
+        <!-- Formulaire d'envoi des données d'inscription -->
+
+        <label for="nom">Nom:</label>
+        <!-- Champ pour le nom -->
+        <input type="text" id="nom" name="nom" required>
+        <!-- Champ de saisie avec validation obligatoire -->
+        <br>
+        
+        <label for="prenom">Prénom:</label>
+        <!-- Champ pour le prénom -->
+        <input type="text" id="prenom" name="prenom" required>
+        <!-- Champ de saisie avec validation obligatoire -->
+        <br>
+        
+        <label for="email">Email:</label>
+        <!-- Champ pour l'adresse email -->
+        <input type="email" id="email" name="email" required>
+        <!-- Champ de saisie avec validation obligatoire -->
+        <br>
+        
+        <label for="password">Mot de passe:</label>
+        <!-- Champ pour le mot de passe -->
+        <input type="password" id="password" name="password" required>
+        <!-- Champ de saisie avec validation obligatoire -->
+        <br>
+
+        <button type="submit">S'inscrire</button>
+        <!-- Bouton de soumission du formulaire -->
+    </form>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Styles pour le corps du document */
+body {
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    background-color: #000000; /* Couleur de fond noire */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime le remplissage par défaut */
+    display: flex; /* Utilise le modèle de boîte flexible */
+    flex-direction: column; /* Dispose les enfants en colonne */
+    align-items: center; /* Centre les enfants horizontalement */
+    justify-content: center; /* Centre les enfants verticalement */
+    height: 100vh; /* Hauteur de la vue à 100% de la fenêtre */
+    position: relative; /* Position relative pour permettre le positionnement absolu des éléments enfants */
+}
+
+/* Styles pour la barre de navigation */
+nav {
+    position: absolute; /* Position absolue par rapport au premier parent positionné */
+    top: 0; /* Alignement en haut du document */
+    height: auto; /* Ajuste automatiquement la hauteur en fonction du contenu */
+    width: 100vw; /* Largeur à 100% de la fenêtre */
+    background-color: rgb(255, 255, 255); /* Couleur de fond blanche */
+    padding: 20px; /* Remplissage de 20 pixels */
+    display: flex; /* Utilise le modèle de boîte flexible */
+    align-items: center; /* Centre les enfants horizontalement */
+    justify-content: space-around; /* Répartit l'espace entre les enfants */
+    color: rgb(0, 0, 0); /* Couleur du texte noire */
+}
+
+/* Styles pour les liens dans la barre de navigation */
+nav a {
+    color: rgb(0, 0, 0); /* Couleur du texte noire */
+    text-transform: uppercase; /* Transforme le texte en majuscules */
+    border: 3px solid rgb(0, 0, 0); /* Bordure solide noire d'un pixel */
+    margin: 0px 20px; /* Marge de 0 pixels en haut/bas et 20 pixels à gauche/droite */
+    padding: 5px; /* Remplissage de 5 pixels */
+    border-radius: 5x; /* Rayon de bordure de 5 pixels */
+    transition: .1s all ease-in; /* Transition de 0.1 seconde avec effet d'entrée */
+}
+
+/* Styles pour les liens dans la barre de navigation au survol */
+nav a:hover {
+    border: 3px solid green; /* Bordure solide verte de 3 pixels au survol */
+    transition: .1s all ease-out; /* Transition de 0.1 seconde avec effet de sortie */
+}
+
+/* Styles pour le formulaire */
+form {
+    background-color: #fff; /* Couleur de fond blanche */
+    border-radius: 8px; /* Rayon de bordure de 8 pixels */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre de boîte */
+    padding: 20px; /* Remplissage de 20 pixels */
+    width: 300px; /* Largeur fixe */
+}
+
+/* Styles pour le titre principal */
+h1 {
+    text-align: center; /* Centrage du texte horizontalement */
+    color: #ffffff; /* Couleur du texte blanc */
+}
+
+/* Styles pour les labels */
+label {
+    display: block; /* Affiche le label comme un élément de bloc */
+    margin: 10px 0 5px; /* Marge de 10 pixels en haut, 0 pixels à gauche/droite, 5 pixels en bas */
+    color: #555; /* Couleur du texte grise */
+}
+
+/* Styles pour les champs de saisie */
+input {
+    width: 100%; /* Largeur à 100% */
+    padding: 10px; /* Remplissage de 10 pixels */
+    margin-bottom: 10px; /* Marge de 10 pixels en bas */
+    box-sizing: border-box; /* Inclut le remplissage et la bordure dans la largeur et la hauteur */
+    border: 1px solid #ccc; /* Bordure solide grise d'un pixel */
+    border-radius: 4px; /* Rayon de bordure de 4 pixels */
+    font-size: 16px; /* Taille de police de 16 pixels */
+}
+
+/* Styles pour les boutons */
+button {
+    background-color: green; /* Couleur de fond verte */
+    color: #fff; /* Couleur du texte blanc */
+    padding: 10px 15px; /* Remplissage de 10 pixels en haut/bas et 15 pixels à gauche/droite */
+    border: none; /* Supprime la bordure */
+    border-radius: 4px; /* Rayon de bordure de 4 pixels */
+    cursor: pointer; /* Curseur en pointeur pour indiquer le clic */
+    font-size: 16px; /* Taille de police de 16 pixels */
+    transition: .3s all ease-in; /* Transition de 0.3 seconde avec effet d'entrée */
+}
+
+/* Styles pour les boutons au survol */
+button:hover {
+    transform: scale(1.1); /* Agrandissement à 110% de la taille d'origine au survol */
+    transition: .3s all ease-out; /* Transition de 0.3 seconde avec effet de sortie */
+}
